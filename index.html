@@ -2,40 +2,62 @@
 <html>
 <head>
 <meta charset= "UTF-8">
-<title>Задание 1</title>
+<link rel="stylesheet" href="stiles.css">
+<title>Задание 2</title>
 </head>
 <body>
-<ol>
+<header class="logo">
+ <img style="float:left" src="http://mtdata.ru/u32/photo2828/20823431365-0/asis.jpeg" height="100" alt="Логотип" />
+ <div style="margin:0 auto"><h1>Название сайта</h1></div>
+</header>
+<nav class="n">
+<a href="#g"> Гиперссылки</a>
+<a href="#f"> Форма</a>
+<a href="#t"> Таблица</a>
+<a href="#p"> Подвал</a>
+</nav>
+<table class="giper" id="g">
+<tr><td><ol><h4>
 <li><a href="http://example.com/">гиперссылку на главную страницу сайта example.com</a></li>
 <li><a href="https://html5book.ru/">на главную сайта example.com в протоколе https</a></li>
-<li><a href="ftp://"> ftp без авторизации</a> </li>
+<li><a href="ftp://"> ftp без авторизации</a></li>
 <li><a href="ftp://user:password@example.com/myfile.zip"> ftp c авторизации</a></li>
 <li><a href="https://example.com/page#element_id">Ссылка на Фрагмент страницы</a></li>
-<li><a href="https://example.com/#fragment">Ссылка на Фрагмент текущей страницы</a></li>
 <li><a href="#f">Ссылка на Фрагмент(на форму) текущей страницы</a></li>
+<li><a href="https://example.com/url_parameters.html?a&b&c">Ссылка-пример с параметрами</a></li>
 <li><a >Ссылка без href</a></li>
 <li><a href="">Пустой href</a></li>
 <li><a href="https://example.com/file" rel="nofollow">Запрет на следование</a></li>
 <li><a href="https://example.com/file" rel="noindex">Запрет на индексацию</a></li>
 <li>Перейдём на справочную страницу <a href="https://html5book.ru/html-html5/">HTML5</a></li>
+</h4></ol></td>
+
+<td><ol start="13"><h4>
 <li><a href="https://html5book.ru/osnovy-html/"><img src="https://html5book.ru/wp-content/uploads/2014/10/html_structure.png" height="100" alt="Picture"></a></li>
-<li>
-<img src="https://cdn.huaniaoy.cn/20161117/original/1479356930129.jpg@!picb" alt="flower" width="300" height="300" usemap="#flower">
+<li><img src="https://cdn.huaniaoy.cn/20161117/original/1479356930129.jpg@!picb" alt="flower" width="300" height="300" usemap="#flower">
 <map name="flower">
 <area shape="circle" coords="150,150,40" href="https://yandex.ru/images/search?from=tabbar&text=цветы" alt="цветы" target="_blank"> 
 <area shape="rect" coords="30,50,100,200" href="https://yandex.ru/images/search?from=tabbar&text=лепестки" alt="лепесток" target="_blank"> 
 </map>
+</h4></ol></td>
+<td><ol start="15"><h4>
 </li>
 <li><a href="./page1.html">относительную на страницу в текущем каталоге</a></li>
 <li><a href="/about/page2.html">относительную на страницу в каталоге about</a></li>
 <li><a href="../page3.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
 <li><a href="./../page.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
 <li><a href="/">сокращенную на главную</a></li>
-</ol>
+</h4></ol></td>
+</tr>
+
+</table>
+
+
+<div class="for" id="f">
  <h4>Форма</h4>
 
-    <form action="/"
-      method="POST" id="f">
+   <h4> <form action="/"
+      method="POST">
 
       <label>
         Имя:<br />
@@ -94,7 +116,44 @@
         С контрактом ознакомлен(а) </label><br />
 	  
       <input type="submit" value="Отправить" />
-    </form>
+    </h4></form>
+	</div>
 
+<table class="tab" id="t">
+  <caption><h4>Покупки</h4></caption>
+  <tr class="s1">
+    <th>№</th>
+    <th>Товар</th>
+    <th>Цена,руб.</th>
+  </tr>
+  <tr class="s2">
+    <td>1</td>
+    <td>Карандаш</td>
+    <td>20,00</td>
+  </tr>
+  <tr class="s1">
+    <td>2</td>
+    <td>Линейка</td>
+    <td>30,00</td>
+  </tr>
+  <tr class="s2">
+    <td>3</td>
+    <td>Ручка шарикова</td>
+    <td>35,00</td>
+  </tr>
+  <tr class="s1">
+    <td>4</td>
+    <td>Ручка гелевая</td>
+    <td>40,00</td>
+  </tr>
+  <tr class="s2">
+    <td colspan="2">Итого</td>
+	<td>125,00</td>
+  </tr>
+</table>
+
+<footer class="pod" id="p">
+<h4>27/2 Федорова Нелли</h4>
+</footer>
 </body>
 </html>
